@@ -56,7 +56,7 @@ export default function CreatePost() {
           onChange={(e) => setFiles(e.target.files)}
           required
         />
-        <Editor value={content} onChange={(e) => setContent(e.target.value)} />
+        <Editor value={content} onChange={setContent} />
         <button type="submit">Create Post</button>
       </form>
     </div>

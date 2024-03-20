@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
+import BASE_URL from "../../config";
 
 export default function RegisterPage() {
   const [username, setUsername] = useState("");
@@ -8,7 +9,7 @@ export default function RegisterPage() {
 
   async function register(e) {
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/register", {
+    const response = await fetch(`${BASE_URL}/register`, {
       method: "POST",
       body: JSON.stringify({ username, password }),
       headers: { "Content-type": "application/json" },

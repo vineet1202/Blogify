@@ -2,12 +2,13 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "./UserContext";
 import logo from "./img3.png";
+import BASE_URL from "../config";
 
 export default function Header() {
   const { userInfo, setUserInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch("http://localhost:4000/profile", {
+    fetch(`${BASE_URL}/profile`, {
       credentials: "include", //sending the credentials to the url
     }).then((response) => {
       response.json().then((userInfo) => {

@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { UserContext } from "../UserContext";
 import { Link } from "react-router-dom";
 import { formatISO9075 } from "date-fns";
+import BASE_URL from "../../config";
 
 export default function PostPage() {
   const [postInfo, setPostInfo] = useState(null);
@@ -12,7 +13,7 @@ export default function PostPage() {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/post/${id}`);
+        const response = await fetch(`${BASE_URL}/post/${id}`);
         const postInfo = await response.json();
         setPostInfo(postInfo);
       } catch (error) {

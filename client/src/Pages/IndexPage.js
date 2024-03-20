@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useContext } from "react";
 import Post from "../Post";
 import { UserContext } from "../UserContext";
+import BASE_URL from "../../config";
 
 export default function IndexPage() {
   const [posts, setPosts] = useState([]);
   const { userInfo } = useContext(UserContext);
 
   useEffect(() => {
-    fetch("http://localhost:4000/post").then((response) =>
+    fetch(`${BASE_URL}/post`).then((response) =>
       response.json().then((posts) => setPosts(posts))
     );
   }, []);

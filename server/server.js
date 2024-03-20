@@ -13,7 +13,7 @@ const cookieParser = require("cookie-parser");
 const multer = require("multer");
 const upload = multer({ dest: "uploads/" });
 const fs = require("fs");
-
+const PORT = process.env.PORT || 4000
 require("dotenv").config();
 
 app.use(
@@ -184,6 +184,6 @@ app.delete("/delete/:id", async (req, res) => {
   }
 });
 
-app.listen(4000, () => {
-  console.log("Server is running on port 4000...");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}...`);
 });

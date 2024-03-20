@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  /* min-width: 550px; */
+  width: 100%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------------header---------------------- */
+
+.header-div {
+  width: 75%;
+  height: 75px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  margin: auto;
+}
+
+.header {
+  margin: 0;
+  height: 100px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  background-color: #111111;
+  color: white;
+  margin-bottom: 4rem;
+}
+
+.post_btns {
+  width: 150px;
+  font-size: 0.7em;
+  box-shadow: rgba(137, 137, 137, 0.2) 0px 2px 8px 0px;
+}
+
+.post_btns:hover {
+  background-color: #057dbc;
+  cursor: pointer;
+}
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+.header a:hover {
+  color: skyblue;
+}
+
+/* -----------------post----------------- */
+.user {
+  width: 75%;
+  margin: 1em auto;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.line {
+  border: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.bottom {
+  border: 1px solid black;
+  background-color: #111111;
+  color: white;
+  width: max-content;
+  margin-left: 193px;
+  margin-top: -1px;
+  padding: 0.2rem 0.5rem;
+}
+.post {
+  display: flex;
+
+  margin-top: 2rem;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+.post:hover {
+  border-radius: 5px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.post__img {
+  width: 400px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.post__content-box {
+  padding: 0 1.2rem;
+}
+
+.post__title {
+  margin-top: 0.3rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.post__title a {
+  text-decoration: none;
+  color: black;
+}
+
+.post__title a:hover {
+  color: rgb(92, 91, 91);
+}
+.post__author {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 400;
+}
+
+time {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.post__desc {
+  font-size: 1.3rem;
+
+  font-weight: 300;
+  font-family: "Kanit", sans-serif;
+}
+
+/* --------------------login&register---------------- */
+
+form.login,
+form.register {
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin: 0.5rem auto;
+  width: 45%;
+  padding: 0.6rem;
+  font-size: 1rem;
+}
+
+button {
+  width: 45%;
+  padding: 0.8rem;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #057dbc;
+}
+
+.box {
+  text-align: center;
+
+  width: 60%;
+
+  margin: 100px auto;
+}
+
+.form {
+  margin-top: 4rem;
+}
+
+/* -------------------create-post-------------------------------- */
+.create-post {
+  width: 65%;
+  margin: auto;
+}
+
+.create-post input {
+  width: 100%;
+}
+
+.create-post button {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.deletion {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* ----------------------post page detail------------------------ */
+.post__page {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.postpage__image {
+  width: min-content;
+
+  margin: 0 auto;
+}
+.postpage__image img {
+  width: 500px;
+  border-radius: 5px;
+  margin: 1em;
+}
+
+.content {
+  font-size: 1.2rem;
+  /* text-align: justify; */
+}
+
+/* -----------------media queries-------------------------------- */
+@media only screen and (max-width: 600px) {
+  .post {
+    display: block;
+  }
+  .logo {
+    height: 55%;
+    margin-bottom: -10px;
+  }
+
+  .header-div {
+    width: 100%;
+    display: inline;
+  }
+  .header-div,
+  .header_box {
+    margin: 0;
+  }
+
+  input,
+  button {
+    width: 100%;
+  }
+
+  .post__img {
+    width: 100%;
+
+    border-radius: 5px;
+  }
+
+  .post_btns {
+    font-size: 1rem;
+    padding: 0.5em;
+  }
+
+  .post {
+    width: 90%;
+
+    margin-top: 2rem auto;
+    width: 75%;
+
+    padding: 0.5rem;
+  }
+  .bottom {
+    text-align: center;
+    margin-left: 55px;
+  }
+}

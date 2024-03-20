@@ -16,7 +16,9 @@ const fs = require("fs");
 
 require("dotenv").config();
 
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(
+  cors({ credentials: true, origin: "https://blogify-1-14k2.onrender.com/" })
+);
 app.use(express.json());
 app.use(cookieParser());
 

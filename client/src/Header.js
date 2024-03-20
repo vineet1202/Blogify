@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "./UserContext";
 import logo from "./img3.png";
-import BASE_URL from "../config";
+import BASE_URL from "./config";
 
 export default function Header() {
   const { userInfo, setUserInfo } = useContext(UserContext);

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
 import "react-quill/dist/quill.snow.css";
 import Editor from "../Editor";
-import BASE_URL from "../../config";
+import BASE_URL from "../config";
 
 export default function CreatePost() {
   const [title, setTitle] = useState("");

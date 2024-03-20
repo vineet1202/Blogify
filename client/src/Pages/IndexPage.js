@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Post from "../Post";
 import { UserContext } from "../UserContext";
-import BASE_URL from "../../config";
+import BASE_URL from "../config";
 
 export default function IndexPage() {
   const [posts, setPosts] = useState([]);

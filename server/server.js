@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 4000
 require("dotenv").config();
 
 app.use(
-  cors({ credentials: true, origin: "https://blogify-1-14k2.onrender.com" })
+  cors({ credentials: true, origin: "https://blogify-brown.vercel.app" })
 );
 app.use(express.json());
 app.use(cookieParser());

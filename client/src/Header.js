@@ -18,7 +18,7 @@ export default function Header() {
   }, []);
 
   async function logout() {
-    const response = await fetch("http://localhost:4000/logout", {
+    const response = await fetch(`${BASE_URL}/logout`, {
       credentials: "include",
       method: "POST",
     });
